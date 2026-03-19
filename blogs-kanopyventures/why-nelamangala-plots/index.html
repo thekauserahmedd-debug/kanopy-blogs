@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanopy Ventures — Deploy Test</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Outfit',sans-serif;
+  background:#1E0F1C;
+  color:#fff;
+  min-height:100vh;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  text-align:center;
+  padding:40px 24px;
+}
+.badge{
+  font-size:11px;letter-spacing:.2em;text-transform:uppercase;
+  color:#C9963A;margin-bottom:32px;
+  display:flex;align-items:center;gap:10px;
+}
+.badge::before,.badge::after{
+  content:'';display:block;width:40px;height:1px;background:#C9963A;opacity:.5;
+}
+h1{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(40px,8vw,80px);
+  font-weight:400;line-height:1.1;
+  margin-bottom:12px;letter-spacing:-.01em;
+}
+h1 em{font-style:italic;color:#E2B45A}
+.sub{
+  font-size:clamp(14px,2vw,18px);
+  font-weight:300;color:rgba(255,255,255,.5);
+  margin-bottom:48px;line-height:1.6;max-width:440px;
+}
+.status-box{
+  background:rgba(201,150,58,.08);
+  border:1px solid rgba(201,150,58,.3);
+  border-radius:4px;
+  padding:28px 40px;
+  margin-bottom:40px;
+  max-width:440px;width:100%;
+}
+.status-dot{
+  width:10px;height:10px;border-radius:50%;
+  background:#22c55e;
+  display:inline-block;margin-right:8px;
+  animation:pulse 2s infinite;
+}
+@keyframes pulse{
+  0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(34,197,94,.4)}
+  50%{opacity:.8;box-shadow:0 0 0 8px rgba(34,197,94,0)}
+}
+.status-text{
+  font-size:15px;font-weight:500;color:#C9963A;
+  margin-bottom:16px;
+}
+.meta{
+  font-size:12px;color:rgba(255,255,255,.35);
+  line-height:2;letter-spacing:.03em;
+}
+.meta span{color:rgba(255,255,255,.6)}
+.divider{
+  width:60px;height:1px;
+  background:linear-gradient(90deg,transparent,#C9963A,transparent);
+  margin:40px auto;
+}
+.cta{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;
+  color:#1E0F1C;background:#C9963A;
+  padding:14px 32px;border-radius:2px;
+  text-decoration:none;margin-bottom:20px;
+  transition:background .2s;
+}
+.cta:hover{background:#E2B45A}
+.cta svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;flex-shrink:0}
+.footer-note{
+  font-size:11px;color:rgba(255,255,255,.25);
+  letter-spacing:.06em;margin-top:48px;
+}
+</style>
+</head>
+<body>
+
+<div class="badge">Kanopy Ventures · Netlify Deploy Test</div>
+
+<h1>It's <em>Working.</em></h1>
+
+<p class="sub">
+  Your Netlify deployment is live and connected correctly.
+  This test page confirms everything is set up.
+</p>
+
+<div class="status-box">
+  <div class="status-text">
+    <span class="status-dot"></span>
+    Deploy successful
+  </div>
+  <div class="meta">
+    Domain <span>kanopyventures.com</span><br>
+    Host <span>Netlify CDN</span><br>
+    SSL <span>Active — https secured</span><br>
+    Deployed <span id="dt">—</span>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<a href="https://kanopyventures-kwin.netlify.app" class="cta">
+  <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  Go to main site
+</a>
+
+<p class="footer-note">
+  Kanopy Ventures LLP · Bangalore · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="19717c757576597278777669606f7c776d6c6b7c6a377a7674">[email&#160;protected]</a> · +91 9120 825 825
+</p>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  const now = new Date();
+  do
